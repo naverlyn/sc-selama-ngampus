@@ -1,0 +1,9 @@
+program tes4;
+var ch: char;
+        c: byte;
+
+begin
+        ch := 'A';      c := 65;
+        ch := chr(65); c:= ord('A');
+        ch := Char(49); c:= Byte('A');
+ end.

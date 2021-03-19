@@ -1,0 +1,9 @@
+program tes3;
+type
+SUMMER = (April, May, June);
+COLORS = (Red, Blue, Yellow);
+
+begin
+
+writeln(SUMMER, '', COLORS);
+end.

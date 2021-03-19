@@ -1,0 +1,8 @@
+program tulisdata1;
+var
+        nama : string;
+begin
+        write('Fakultas Teknik Informatika Universitas Majalengka ');
+        write('Aula');
+        readln;
+end.

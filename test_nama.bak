@@ -1,0 +1,9 @@
+program uang;    {judul program}
+var
+        namas : string;     {nilai variabel}
+begin                                          {mulai}
+                write('Nama Anda : ');  {menulis perintah statement}
+                readln(namas);                           {membaca perintah statement diatas tadi}
+                write('Hi, ', namas);    {menulis lagi perintah diatas}
+                readln;                                    {membaca statement terakhir}
+end.                                                                                 {udahan}

@@ -1,0 +1,15 @@
+program test_tali;
+var
+panjang_t, jml, tot : integer;
+
+begin
+        panjang_t := 15;
+        writeln('Panjang seutas tali :', panjang_t, 'Meter');
+        writeln('Masukan Jumlah tali :', panjang_t);
+        readln(jml);
+
+                 tot := panjang_t*jml;
+
+        writeln('Panjang : ', jml, 'Utas tali adalah ', tot, 'Meter');
+        readln;
+end.

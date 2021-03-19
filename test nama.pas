@@ -1,0 +1,9 @@
+program uang;
+var
+        namas : char;
+begin
+                write('Nama Anda : ');
+                readln(namas);
+                write('Hi, ', namas);
+
+end.

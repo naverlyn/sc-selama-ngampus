@@ -1,0 +1,27 @@
+program test_soal;
+uses crt;
+const
+        benar = 5;
+        salah = ( -1);
+var
+        jawaban : Char;
+        A, B : Char;
+        score : real;
+
+begin
+        clrscr;
+        write('Selamat Datang !');
+        writeln;
+
+        writeln('Soal !');
+        writeln('Tentukan Benar atau Salahnya saja');
+        writeln('1.Presiden Indonesia adalah Megawati Soekarnoputri');
+        writeln('A. Benar B. Salah');
+        writeln('Jawaban : ');
+        readln(A, B);
+        if (jawaban ='A') then score := benar
+                else score :=  salah;
+
+        writeln('total skor anda adalah : ', score:8:2);
+        readln;
+end.

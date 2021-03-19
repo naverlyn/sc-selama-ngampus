@@ -1,0 +1,50 @@
+<script>
+	
+	let peserta = 
+	[
+		{
+			"nama" : "Surya",
+			"umur" : "20",
+			"sekolah" : 
+				{
+					"sma" : "SMA Al-ahzar",
+					"Kuliah" : "CIC"
+				}
+		},
+
+		{
+			"nama" : "Cahya",
+			"umur" : "18",
+			"sekolah" : 
+				{
+					"sma" : " SMA TELKOM",
+					"Kuliah" : "STIKOM"
+				}
+		}
+	]
+
+	peserta.forEach((data) =>
+	{
+		console.log("Nama : " + data.nama);
+		console.log("Umur : " + data.umur);
+		if (data.umur < 20) 
+		{
+			console.log("Jenjang : " + data.sekolah.sma);
+		}
+		else
+		{
+			console.log("Jenjang : " + data.sekolah.Kuliah);
+		}
+
+	});
+
+/*	var i;
+
+	for( i = 0;  i < peserta.length; i++) 
+	{
+		console.log(peserta[i].nama);
+		console.log(peserta[i].umur);
+	}
+	//console.log(peserta[0].nama); */
+
+</script>

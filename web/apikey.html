@@ -1,0 +1,26 @@
+
+<script type="text/javascript">
+	fetch("http://newsapi.org/v2/top-headlines?country=id&apiKey=2fcf2e3a76ee41fdbff1e77926ed60ca")
+		.then(function(response)
+		{
+			return response.json();
+		})
+		.then(function(data)
+		{
+			let result = "";
+			data.articles.forEach((berita) =>
+			{
+				result +=
+				document.write("<div style='border:2px solid black; width:70%;font-family:Calibri;padding:25;>'");
+				
+				document.write("<h4>" + berita.title + "</h4>");
+				document.write("Author: "+ berita.author + "");
+				document.write("<p align='left'><font size='2'>" + berita.description + "</p></font>");
+				document.write("<img src='" + berita.urlToImage + "'>");
+				document.write("<p align='left'>" + berita.content + "</p>");
+				document.write("<a href='" + berita.url + "'> Klik untuk lebih lanjut </a>");
+				document.write("</div></div>");
+				document.write("<br>");
+			});
+		})
+</script>				
